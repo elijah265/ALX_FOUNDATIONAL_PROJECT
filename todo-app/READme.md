@@ -1,0 +1,1 @@
+This project demonstrates a simple full-stack application with a frontend, backend, database, and API. You can expand upon this basic example by adding user authentication, more complex features, or deploying it to a production environment.
