@@ -1,0 +1,33 @@
+
+body{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    width: 60%;
+    background-color: #ffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+a{
+    cursor: pointer;
+    background-color: #ffff;
+}
+button{
+    background-color: gray;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: #ffff;
+    text-decoration: none;
+    text-transform: none;
+    font-size: 18px;
+    cursor: pointer;   
+}
+
