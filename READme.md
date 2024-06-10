@@ -1,1 +1,1 @@
-This folder contains all thyealx foundational portfolio project
+This folder contains all alx foundational portfolio project
