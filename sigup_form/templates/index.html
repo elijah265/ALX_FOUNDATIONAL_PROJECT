@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+   
+    <form method="POST" action="{{ url_for('signup') }}">
+       <h2>Sign-up</h2>
+
+       {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <ul class="flashes">
+                {% for category, message in messages %}
+                    <li class="{{ category }}">{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+
+        <div class="form-container">
+            <label for="username"> Enter Your name :</label>
+            <input type="text" name="username" id="name" 
+            placeholder="Enter Your name"> 
+            <span id="name-error"></span>
+        </div>
+       
+        <div class="form-container">
+            <label for="email"> Enter Your Email  </label>
+            <input type="email" name="email" id="email" placeholder=" Enter Your Email"> 
+            <span id="email-error"></span>
+        </div>
+       
+        <div class="form-container">
+            <label for="password"> Enter  Password </label>
+            <input type="password" name="password" id="password" placeholder="Enter  Password ">
+            <span id="password-error"></span>
+        </div>
+        <div class="btn">
+
+        
+       <a href="welcome.html">
+        <button type="submit" id="submit-btn">Submit</button>
+       </a> 
+       
+        </div>
+    </form>
+
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>
+
